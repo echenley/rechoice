@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AsyncMultiSelect renders a MultiSelect child 1`] = `
+<MultiSelect
+  disabled={false}
+  filterItems={[Function]}
+  itemKey="id"
+  items={Array []}
+  loadingIndicator={
+    <div
+      className="loading-indicator"
+    />
+  }
+  loadingState="success"
+  minimumInput={0}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onInputChange={[Function]}
+  placeholder="Placeholder"
+  renderItem={[Function]}
+  renderTag={[Function]}
+  value={Array []}
+/>
+`;
+
+exports[`AsyncMultiSelect renders correctly 1`] = `
+<Async
+  loadItems={[Function]}
+  minimumInput={0}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onInputChange={[Function]}
+>
+  [Function]
+</Async>
+`;

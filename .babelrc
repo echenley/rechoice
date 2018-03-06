@@ -1,0 +1,34 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["last 3 versions"]
+      }
+    }],
+    "stage-1",
+    "react"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    "transform-flow-strip-types"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "transform-react-jsx-source",
+        "flow-react-proptypes"
+      ]
+    },
+    "test": {
+      "presets": [
+        "env",
+        "react",
+        "stage-1"
+      ],
+      "plugins": [
+        "transform-react-jsx-source"
+      ]
+    }
+  }
+}

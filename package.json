@@ -1,0 +1,97 @@
+{
+  "name": "rechoice",
+  "version": "1.0.0",
+  "description": "A highly customizable select dropdown for React.",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "classnames": "^2.2.5"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^22.0.6",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-flow-react-proptypes": "^13.0.2",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-react-jsx-source": "^6.22.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-1": "^6.13.0",
+    "css-loader": "^0.28.8",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.18.2",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-jest": "^21.13.0",
+    "eslint-plugin-react": "^7.7.0",
+    "file-loader": "^1.1.6",
+    "flow-bin": "^0.64.0",
+    "flow-typed": "^2.2.3",
+    "html-loader": "^0.5.4",
+    "husky": "^0.14.3",
+    "jest": "^22.0.6",
+    "js-beautify": "^1.7.5",
+    "json-loader": "^0.5.7",
+    "lint-staged": "^6.0.0",
+    "lodash": "^4.17.4",
+    "node-sass": "^4.7.2",
+    "prettier": "^1.10.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^3.1.3",
+    "react-overlays": "^0.8.3",
+    "react-popper": "^0.7.5",
+    "react-test-renderer": "^16.2.0",
+    "react-travel": "^1.3.5",
+    "resolve-url-loader": "^2.2.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.1"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "flow": "flow",
+    "flow-check": "flow check",
+    "flow-typed": "flow-typed install --ignoreDeps peer",
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "build": "NODE_ENV=production babel src --out-dir lib --ignore __tests__",
+    "build-watch": "NODE_ENV=production babel --watch src --out-dir lib --ignore __tests__",
+    "lint": "eslint src/ example/",
+    "prettier": "prettier --write \"src/**/*.js\" \"example/**/*.js\"",
+    "precommit": "lint-staged"
+  },
+  "keywords": [
+    "react",
+    "select",
+    "option"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/echenley/rechoice.git"
+  },
+  "author": "Evan Henley <evan.henley@gmail.com>",
+  "license": "ISC",
+  "jest": {
+    "setupFiles": [
+      "./jest-setup.js"
+    ]
+  },
+  "lint-staged": {
+    "+(src|example)/**/*.js": [
+      "node_modules/.bin/prettier --write",
+      "git add"
+    ]
+  }
+}

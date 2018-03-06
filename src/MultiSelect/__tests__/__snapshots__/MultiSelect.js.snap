@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MultiSelect Methods onInputChange updates state with new input value 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": 1,
+    },
+    Object {
+      "id": 2,
+    },
+    Object {
+      "id": 3,
+    },
+    Object {
+      "id": 4,
+    },
+    Object {
+      "id": 5,
+    },
+  ],
+  "focusedItemIndex": 0,
+  "inputValue": "test",
+  "isFocused": false,
+  "isOpen": true,
+}
+`;
+
+exports[`MultiSelect Methods onInputFocus calls clearBlurTimer and updates state 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": 1,
+    },
+    Object {
+      "id": 2,
+    },
+    Object {
+      "id": 3,
+    },
+    Object {
+      "id": 4,
+    },
+    Object {
+      "id": 5,
+    },
+  ],
+  "focusedItemIndex": 0,
+  "inputValue": "",
+  "isFocused": true,
+  "isOpen": true,
+}
+`;
+
+exports[`MultiSelect renders correctly 1`] = `
+<div
+  className="rechoice"
+>
+  <div
+    className="rechoice-input-wrapper"
+    onClick={[Function]}
+    role="presentation"
+  >
+    <Tags
+      className="rechoice-tags"
+      itemKey="id"
+      removeTag={[Function]}
+      renderTag={undefined}
+      value={
+        Array [
+          Object {
+            "id": 3,
+          },
+        ]
+      }
+    />
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-owns="rechoice-0-listbox"
+      autoComplete="off"
+      className="rechoice-input"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      placeholder={null}
+      type="text"
+      value=""
+    />
+    <span
+      className="rechoice-input-mirror"
+    >
+      
+       
+    </span>
+  </div>
+  <Menu
+    classes={
+      Object {
+        "disabled": "disabled",
+        "focused": "focused",
+        "input": "rechoice-input",
+        "inputMirror": "rechoice-input-mirror",
+        "inputWrapper": "rechoice-input-wrapper",
+        "item": "rechoice-item",
+        "menu": "rechoice-menu",
+        "root": "rechoice",
+        "selected": "selected",
+        "tags": "rechoice-tags",
+        "value": "rechoice-value",
+      }
+    }
+    controlsId="rechoice-0-listbox"
+    focusedItemIndex={null}
+    focusedItemRef={[Function]}
+    getItemId={[Function]}
+    inputValue=""
+    isItemSelected={[Function]}
+    isOpen={false}
+    itemKey="id"
+    items={
+      Array [
+        Object {
+          "id": 1,
+        },
+        Object {
+          "id": 2,
+        },
+        Object {
+          "id": 3,
+        },
+        Object {
+          "id": 4,
+        },
+        Object {
+          "id": 5,
+        },
+      ]
+    }
+    loadingIndicator={
+      <div
+        className="loading-indicator"
+      />
+    }
+    menuRef={[Function]}
+    onHoverItem={[Function]}
+    onSelect={[Function]}
+    renderItem={[Function]}
+    renderMenu={undefined}
+    state={undefined}
+  />
+</div>
+`;

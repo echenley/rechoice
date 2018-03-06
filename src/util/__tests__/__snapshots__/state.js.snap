@@ -1,0 +1,290 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`state transforms focusInput filters items and focuses first item if both value and focusedItemIndex are null or no longer in filteredItems 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": "1",
+    },
+    Object {
+      "id": "3",
+    },
+  ],
+  "inputValue": "ab",
+  "isOpen": true,
+}
+`;
+
+exports[`state transforms focusInput filters items and focuses value if focusedItemIndex is null 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": "1",
+    },
+    Object {
+      "id": "3",
+    },
+  ],
+  "inputValue": "ab",
+  "isOpen": true,
+}
+`;
+
+exports[`state transforms focusInput opens and sets focusedItemIndex to 0 if value is missing from filteredItems, focusedItemIndex is null, and minimumInput is met 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": "1",
+    },
+    Object {
+      "id": "3",
+    },
+  ],
+  "isFocused": true,
+  "isOpen": true,
+}
+`;
+
+exports[`state transforms focusInput opens and sets focusedItemIndex to index of current value if focusedItemIndex is null and minimumInput is met 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": "1",
+    },
+    Object {
+      "id": "3",
+    },
+  ],
+  "isFocused": true,
+  "isOpen": true,
+}
+`;
+
+exports[`state transforms focusInput simply sets isFocused if below minimumInput 1`] = `
+Object {
+  "isFocused": true,
+}
+`;
+
+exports[`state transforms focusNextItem focuses first item if no focusedItemIndex and value is an array 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": "1",
+    },
+    Object {
+      "id": "2",
+    },
+    Object {
+      "id": "3",
+    },
+  ],
+  "focusedItemIndex": 0,
+  "isOpen": true,
+}
+`;
+
+exports[`state transforms focusNextItem focuses next item 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": "1",
+    },
+    Object {
+      "id": "2",
+    },
+    Object {
+      "id": "3",
+    },
+  ],
+  "focusedItemIndex": 2,
+  "isOpen": true,
+}
+`;
+
+exports[`state transforms focusNextItem focuses value if no focusedItemIndex 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": "1",
+    },
+    Object {
+      "id": "2",
+    },
+    Object {
+      "id": "3",
+    },
+  ],
+  "focusedItemIndex": 1,
+  "isOpen": true,
+}
+`;
+
+exports[`state transforms focusNextItem wraps around to first item 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": "1",
+    },
+    Object {
+      "id": "2",
+    },
+    Object {
+      "id": "3",
+    },
+  ],
+  "focusedItemIndex": 0,
+  "isOpen": true,
+}
+`;
+
+exports[`state transforms focusPreviousItem does not change focusedItemIndex if state.isOpen === false 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": "1",
+    },
+    Object {
+      "id": "2",
+    },
+    Object {
+      "id": "3",
+    },
+  ],
+  "isOpen": true,
+}
+`;
+
+exports[`state transforms focusPreviousItem focuses first item if no focusedItemIndex and value is an array 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": "1",
+    },
+    Object {
+      "id": "2",
+    },
+    Object {
+      "id": "3",
+    },
+  ],
+  "focusedItemIndex": 2,
+  "isOpen": true,
+}
+`;
+
+exports[`state transforms focusPreviousItem focuses previous item 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": "1",
+    },
+    Object {
+      "id": "2",
+    },
+    Object {
+      "id": "3",
+    },
+  ],
+  "focusedItemIndex": 0,
+  "isOpen": true,
+}
+`;
+
+exports[`state transforms focusPreviousItem focuses value if no focusedItemIndex 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": "1",
+    },
+    Object {
+      "id": "2",
+    },
+    Object {
+      "id": "3",
+    },
+  ],
+  "focusedItemIndex": 2,
+  "isOpen": true,
+}
+`;
+
+exports[`state transforms focusPreviousItem wraps around to last item 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": "1",
+    },
+    Object {
+      "id": "2",
+    },
+    Object {
+      "id": "3",
+    },
+  ],
+  "focusedItemIndex": 2,
+  "isOpen": true,
+}
+`;
+
+exports[`state transforms updateInputValue does not open the input if minimumInput is not reached 1`] = `
+Object {
+  "inputValue": "ab",
+  "isOpen": false,
+}
+`;
+
+exports[`state transforms updateInputValue filters items and focuses first item if both value and focusedItemIndex are null 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": "1",
+    },
+    Object {
+      "id": "3",
+    },
+  ],
+  "inputValue": "ab",
+  "isOpen": true,
+}
+`;
+
+exports[`state transforms updateInputValue filters items and focuses value if focusedItemIndex is null 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": "1",
+    },
+    Object {
+      "id": "3",
+    },
+  ],
+  "inputValue": "ab",
+  "isOpen": true,
+}
+`;
+
+exports[`state transforms updateInputValue filters items and keeps previously focused item if it is still in filteredItems 1`] = `
+Object {
+  "filteredItems": Array [
+    Object {
+      "id": "1",
+    },
+    Object {
+      "id": "2",
+    },
+    Object {
+      "id": "3",
+    },
+  ],
+  "inputValue": "ab",
+  "isOpen": true,
+}
+`;
+
+exports[`state transforms updateInputValue simply opens the input if loadingState === "loading" 1`] = `
+Object {
+  "inputValue": "newValue",
+  "isOpen": true,
+}
+`;

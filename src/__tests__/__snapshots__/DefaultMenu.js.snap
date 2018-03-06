@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DefaultMenu renders correctly for an error 1`] = `
+<div
+  className="className"
+>
+  <div
+    className="error"
+  >
+    Something went wrong.
+  </div>
+</div>
+`;
+
+exports[`DefaultMenu renders correctly when isOpen is false (null) 1`] = `null`;
+
+exports[`DefaultMenu renders correctly when loading 1`] = `
+<div
+  className="className"
+>
+  <div
+    className="loading"
+  >
+    Loading results…
+  </div>
+</div>
+`;
+
+exports[`DefaultMenu renders correctly with no results 1`] = `
+<div
+  className="className"
+>
+  <div
+    className="empty"
+  >
+    No results.
+  </div>
+</div>
+`;
+
+exports[`DefaultMenu renders correctly with results 1`] = `
+<div
+  className="className"
+>
+  <ul
+    listProp1="listProp1"
+  >
+    <div>
+      Child 1
+    </div>
+    <div>
+      Child 2
+    </div>
+    <div>
+      Child 3
+    </div>
+  </ul>
+</div>
+`;
+
+exports[`DefaultMenu renders loadingIndicator if available 1`] = `
+<div
+  className="className"
+>
+  <div
+    className="loading"
+  >
+    <div
+      className="loading-indicator"
+    />
+  </div>
+</div>
+`;

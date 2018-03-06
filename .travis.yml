@@ -1,0 +1,25 @@
+language: node_js
+node_js: [node]
+
+before_install:
+  # Download and export yarn.
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.0.1
+  - export PATH=$HOME/.yarn/bin:$PATH
+  # Export the C++11 compiler.
+  - if [[ $TRAVIS_OS_NAME == "linux" ]]; then export CXX=g++-4.8; fi
+
+cache:
+  # Cache yarn packages.
+  yarn: true
+
+env:
+  # Separate runs for tests, linting, and flow
+  matrix:
+    - TEST_TYPE=lint
+    - TEST_TYPE=flow-check
+    - TEST_TYPE=test
+
+script:
+  # Run testing or linting depending on the environment.
+  - yarn run $TEST_TYPE
+©

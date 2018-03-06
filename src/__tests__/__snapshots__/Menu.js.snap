@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu renders correctly 1`] = `
+<div
+  className="rechoice-menu"
+>
+  <ul
+    id="controls-id"
+    role="listbox"
+  >
+    <div
+      aria-selected={false}
+      className="rechoice-item"
+      id="item-0"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      role="option"
+    >
+      1
+    </div>
+    <div
+      aria-selected={false}
+      className="rechoice-item"
+      id="item-1"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      role="option"
+    >
+      2
+    </div>
+    <div
+      aria-selected={true}
+      className="rechoice-item focused"
+      id="item-2"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      role="option"
+    >
+      3
+    </div>
+    <div
+      aria-selected={false}
+      className="rechoice-item selected"
+      id="item-3"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      role="option"
+    >
+      4
+    </div>
+    <div
+      aria-selected={false}
+      className="rechoice-item"
+      id="item-4"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      role="option"
+    >
+      5
+    </div>
+  </ul>
+</div>
+`;

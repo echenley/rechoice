@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AsyncSelect renders a Select child 1`] = `
+<Select
+  autoResizeInput={false}
+  disabled={false}
+  filterItems={[Function]}
+  itemKey="id"
+  items={Array []}
+  loadingIndicator={
+    <div
+      className="loading-indicator"
+    />
+  }
+  loadingState="success"
+  minimumInput={0}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onInputChange={[Function]}
+  placeholder="Placeholder"
+  renderItem={[Function]}
+  renderSelected={[Function]}
+  resetInputOnBlur={true}
+  value={null}
+/>
+`;
+
+exports[`AsyncSelect renders correctly 1`] = `
+<Async
+  loadItems={[Function]}
+  minimumInput={0}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onInputChange={undefined}
+>
+  [Function]
+</Async>
+`;

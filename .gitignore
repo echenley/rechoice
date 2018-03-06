@@ -1,0 +1,10 @@
+coverage/
+lib/
+node_modules/
+.cache-loader/
+
+.DS_Store
+npm-debug.log*
+stats.json
+yarn-error.log
+.yarnclean

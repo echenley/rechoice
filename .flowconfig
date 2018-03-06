@@ -1,0 +1,29 @@
+[ignore]
+.*/\.yarn/.*
+.*node_modules/config-chain.*
+.*/node_modules/fbjs/.*
+
+[include]
+./node_modules/react
+./node_modules/fbjs/lib
+
+[libs]
+./node_modules/fbjs/flow/lib
+./flow-typed/
+
+[options]
+module.system=haste
+module.use_strict=true
+module.file_ext=.js
+module.file_ext=.json
+module.file_ext=.css
+module.name_mapper='.*\(\.css\)' -> 'CSSModule'
+module.name_mapper='.*\(\.css\)$' -> 'HTMLModule'
+module.name_mapper='.*\.\(svg\|png\|jpg\|gif\)$' -> '<PROJECT_ROOT>/flow-stubs/url-loader.js'
+
+esproposal.class_static_fields=enable
+suppress_type=$FlowIssue
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+
+[version]
+^0.64.0

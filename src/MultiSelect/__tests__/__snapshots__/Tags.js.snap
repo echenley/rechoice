@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tags renders correctly 1`] = `
+<span
+  className="tags"
+>
+  <button
+    onClick={[Function]}
+  >
+    Item 1
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Item 2
+  </button>
+</span>
+`;
