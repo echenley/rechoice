@@ -22,4 +22,3 @@ env:
 script:
   # Run testing or linting depending on the environment.
   - yarn run $TEST_TYPE
-©
